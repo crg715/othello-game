@@ -1,0 +1,58 @@
+#othello-board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    border: 2px solid #333;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #999;
+    background-color: #006400;
+    position: relative;
+    cursor: pointer;
+}
+
+.cell.valid-move {
+    background-color: #3cb371;
+}
+
+.piece {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black {
+    background-color: #000;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.score {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#game-status {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+}
